@@ -1,0 +1,1 @@
+const validChoices =["rock","paper", "sci"]

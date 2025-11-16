@@ -1,0 +1,17 @@
+:root{
+    --bg: #fff6fb;
+    --card: #ffeef8;
+    --accent:
+}
+
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+h1{
+    color: lightpink;
+}

@@ -1,0 +1,21 @@
+:root{
+    --bg: #fff6fb;
+    --card: #ffeef8;
+    --accent: #ff5aa7;
+    --text: #222;
+    --muted: #565454;
+}
+*{box-sizing:border-box}
+/* asterisk= universal selector ; applying this to every element on the entire page---- changes how width and height are calculated for all elements. Prevents from elements from accidentally growing bigger
+*/
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+h1{
+    color: lightpink;
+}

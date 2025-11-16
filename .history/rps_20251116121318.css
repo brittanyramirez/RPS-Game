@@ -1,0 +1,200 @@
+:root{
+    --bg: #fff6fb;
+    --card: #ffeef8;
+    --accent: #ff5aa7;
+    --text: #222;
+    --muted: #565454;
+}
+*{box-sizing:border-box}
+/* asterisk= universal selector ; applying this to every element on the entire page---- changes how width and height are calculated for all elements. Prevents from elements from accidentally growing bigger
+*/
+
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: var(--card);
+    color:var(--text);
+    display: block;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.page-center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/*styles the page b*/
+.container{
+    width: 100%;
+    background: var(--card);
+    border-radius: 14px;
+    padding: 50px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    border: 10px solid rgba(255,90,167,0.1);
+}
+/* styles the the title*/
+.title{
+    margin: 0 0 6px;
+    font-size: 45px;
+    letter-spacing: 0.6px;
+    color:var(--accent);
+}
+
+.subtitle{
+    margin: 0 0 18px;
+    color:var(--muted);
+    font-size:18px;
+}
+
+.input-row{
+    display:flex;
+    gap:8px;
+    justify-content: center;
+    margin-bottom:18px;
+}
+
+input#userInput{
+    flex:1;
+    padding: 10px 12px;
+    font-size:16px;
+    border-radius: 8px;
+    border: 2px solid #ffd8ea;
+    outline:none;
+    background: #fff;
+}
+
+button#playBtn{
+    padding: 10px 14px;
+    border-radius: 8px;
+    background:var(--accent);
+    color:white;
+    font-weight: 600;
+    border:none;
+    cursor: pointer;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.choice-block{
+    width:160px;
+    background:white;
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+    text-align: center;
+}
+
+.label{
+    font-size: 13px;
+    color:var(--muted);
+    margin-bottom: 8px;
+}
+
+.choice-img{
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+    display:block;
+    margin: 0 auto 8px;
+}
+/* styles the result*/
+.final-img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display:block;
+    margin: 0 auto 8px;
+}
+
+.result{
+    margin-top: 16px;
+    font-size: 45px;
+    font-weight: 900;
+    color:var(--accent);
+    text-align: center;
+}
+
+.result-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:40px;
+    margin-top: 20px;
+}
+.result-box {
+    font-size: 30px;
+}
+
+.result-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    
+}
+.site-footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    color: var(--muted);
+    background-color: #ff5aa7;
+    border-top: 2px solid rgba(255,90,167,0.1);
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    line-height: 1.5;
+}
+/*scoreboard container*/
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 15px 20px;
+    background: #ffeef8;
+    border: 2px dotted rgba(255,90,167,0.3);
+    border-radius: 12px;
+    width: fit-content;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#resetBtn {
+    display: block;
+    margin: 0;
+    padding: 10px 18px;
+    background: var(--accent);
+    color:white;
+    border:none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+#resetBtn:hover{
+    background: #ff3f93;
+    transform: scale(1.05);
+}
+
+
+@keyframes shake{
+    0% {transform: translateX(0); }
+    25% {transform: translateX(-10px); }
+    50% {transform: translateX(-10px); }
+    75% {transform: translateX(-10px); }
+    100% {transform: translateX(0); }
+}
+.shake{
+    animation: shake 0.4s ease-in-out 3;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rps.css">
+    <title>Rock Paper Scissor Game</title>
+  
+</head>
+<body>
+    <!-- This is the main container that holds the whole game-->
+    <div class="page-center">
+        <div class="container">
+
+         <h1 class="title">🎀Let's play a game🎀</h1>
+
+         <!--instructions-->
+         <p class="subtitle"> Type <strong>rock</strong>, <strong>paper</strong>, <strong>scissors</strong></p>
+
+         <!-- this is the input box-->
+         <div class="input-row">
+            <input id="userInput" type="text" placeholder="Enter rock, paper, or scissors" autocomplete="off">
+            <button id="playBtn"> Play</button>
+    </div>
+  <!-- animation section-->
+   <h3 class="section-title">Your options to pick from:</h3>
+   <div class="display">
+        
+        <!--rock image-->
+        <div class="choice-block">
+            <div class="label">Rock🎀</div>
+            <img id="rock" class="choice-img" src="images/rockmickey.png" alt="rock">
+        </div>
+       
+        <!--paper image-->
+     <div class="choice-block">
+            <div class="label">Paper🎀</div>
+            <img id="paper" class="choice-img" src="images/paperminnie.png" alt="paper">
+    </div>
+
+        <!--scissors image-->
+        <div class="choice-block">
+            <div class="label">Scissors🎀</div>
+            <img id="scissors" class="choice-img" src="images/scissorsminnie.png" alt="scissors">
+        </div>
+    </div> <!--end of display row-->
+<!--final result images-->
+<div class="result-layout">
+<!--scoreboard-->
+   <div class="scoreboard">
+    <p>Wins: <span id="wins">0</span></p>
+    <p>Losses: <span id="losses">0</span></p>
+    <p>Ties: <span id="ties">0</span></p>
+    <button id="resetBtn">Reset Score</button>
+</div>
+
+<!--results-->
+<div class="result-right"> 
+
+    <div class="result-row">
+
+    <div class="result-box">
+        <h4>You Chose🎀</h4>
+        <img id="user-final-img" class="final-img" src="images/minniequestion.png" alt="">
+    </div>
+    
+    <!--computer result-->
+    <div class="result-box">
+        <h4>Computer Chose🎀</h4>
+        <img id="computer-final-img" class="final-img" src="images/minniequestion.png" alt="">
+            </div>
+   
+        </div>
+    <div id="result" class="result"></div>
+   </div> <!--end of result--->
+   </div> <!--end of container-->
+
+
+</div> <!--end of page-center-->
+
+<script src="rps.js"></script>
+
+     <footer class="site-footer">
+Thank you for playing our Minnie Mouse themed Rock Paper Scissors game. <br> <small>
+    This project is for educational purposes only. I do not own the right to any Disney characters or images useed. All trademarks and copyrights belong to their respective owners.
+</small>
+</footer>
+    </body>
+
+</html>

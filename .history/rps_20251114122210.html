@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rps.css">
+    <title>Rock Paper Scissor Game</title>
+  
+</head>
+<body>
+    <!-- This is the main container that holds the whole game-->
+    <div class="container">
+         <h1 class="title">Let's play a game</h1>
+         <h2 class="title">Rock, Paper, Scissors</h2>
+
+         <!--instructions-->
+         <p class="subtitle"> Type <strong>rock</strong>, <strong>paper</strong>, <strong>scissors</strong></p>
+
+         <!-- this is the input box-->
+         <div class="input-row">
+            <input id="userInput" type="text" placeholder="Enter rock, paper, or scissors" autocomplete="off">
+            <button id="playBtn"> Play</button>
+    </div>
+  
+    <div class="display-row">
+        
+        <!--rock image-->
+        <div class="choice-block">
+            <div class="label">Rock</div>
+            <img id="rock" src="images/rockmickey.png" alt="rock">
+
+     </div>
+      <div class="display">
+        <div class="choice-block">
+            <div class="label">Paper</div>
+            <img id="rps" src="images/paperminnie.png" alt="paper">
+
+     </div>
+      <div class="display">
+        <div class="choice-block">
+            <div class="label">Scissors</div>
+            <img id="rps" src="images/scissorsminnie.png" alt="scissors">
+
+     </div>
+
+<script src="rps.js"></script>
+
+     <footer>
+Thank you for playing our Minnie Mouse themed Rock Paper Scissors. 
+</footer>
+    </body>
+
+</html>

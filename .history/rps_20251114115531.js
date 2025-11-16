@@ -1,0 +1,14 @@
+const validChoices =["rock","paper", "scissors"];
+const images ={
+    rock: "rockminnie.png",
+    paper: "paperminnie.png",
+    scissors: "scissorsminnie.png"
+};
+
+const userInput = document.getElementById("userInput");
+const playBtn = document.getElementById("playBtn");
+const userInput = document.getElementById("userInput");
+const playBtn = document.getElementById("playBtn");
+const userInput = document.getElementById("userInput");
+const playBtn = document.getElementById("playBtn");
+const  = document.getElementById("userInput");
